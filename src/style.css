@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100vw;
     background-color: grey;
+    display: flex;
 }
 
 .sidebar {
@@ -17,4 +18,18 @@
 
 .project-form {
     display: none;
+}
+
+.input-form {
+    border-radius: 10px;
+    height: 20px;
+}
+
+.task-window {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: auto;
+    width: 100vw;
 }
