@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -40,6 +42,13 @@
     gap: 20px;
 }
 
+.task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .task {
     align-self: center;
     justify-self: center;
@@ -65,12 +74,18 @@
     transition: all 0.3s ease;
   }
   
-  .dropdown-menu-open {
+.dropdown-menu-open {
     max-height: 200px;
+    background-color: white;
     transition: all 0.3s ease;
   }
 
   .dropdown-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     position: absolute;
     right: 15px;
+    font-size: 24px;
+    font-family: 'Comfortaa', sans-serif;
   }
