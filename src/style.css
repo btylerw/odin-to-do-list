@@ -16,8 +16,14 @@
     background-color: rgb(223, 217, 217);
 }
 
-.project-form {
+.project-container {
     display: none;
+}
+
+.project-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-form {
@@ -26,10 +32,45 @@
 }
 
 .task-window {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: auto;
+    display: flex;
     width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    border: 2px solid red;
+    gap: 20px;
 }
+
+.task {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    font-size: 24px;
+}
+
+.warning {
+    display: none;
+    color: red;
+}
+
+.dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-menu-open {
+    max-height: 200px;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-btn {
+    position: absolute;
+    right: 15px;
+  }

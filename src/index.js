@@ -10,7 +10,7 @@ const submitBtn = document.getElementById('submit-btn');
 submitBtn.addEventListener('click', addTask);
 
 function loadProjectForm() {
-    const proj = document.getElementById('project-form');
+    const proj = document.getElementById('project-container');
     if (proj.style.display == 'flex') {
         proj.style.display = 'none';
     } else {
