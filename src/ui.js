@@ -7,7 +7,8 @@ function loadUI() {
     sidebar.innerHTML = 'To - Do - List';
 
     const new_project = document.createElement('button');
-    new_project.setAttribute('id', 'new-btn')
+    new_project.setAttribute('id', 'new-btn');
+    new_project.classList.add('new-btn');
     new_project.innerHTML = '+ New';
 
     const project_container = document.createElement('div');
@@ -23,6 +24,7 @@ function loadUI() {
     name.required = true;
     const submit_btn = document.createElement('button');
     submit_btn.setAttribute('id', 'submit-btn');
+    submit_btn.classList.add('submit-btn');
     submit_btn.type = 'submit';
     submit_btn.innerHTML = 'Add';
     const warning = document.createElement('div');
@@ -33,7 +35,6 @@ function loadUI() {
     project_form.appendChild(warning);
     project_form.appendChild(submit_btn);
     project_container.appendChild(project_form);
-    // TODO: Add warning in case text field is empty and project is attempted to be added
 
     const task_window = document.createElement('div');
     task_window.setAttribute('id', 'task-window');

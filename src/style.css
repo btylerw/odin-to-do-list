@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+  margin: 0px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+* {
+  font-family: 'Righteous', sans-serif;
+}
 
 .container {
     height: 100vh;
@@ -14,8 +27,9 @@
     gap: 20px;
     padding: 10px;
     height: 100vh;
-    width: 200px;
+    width: 300px;
     background-color: rgb(223, 217, 217);
+    font-size: 36px;
 }
 
 .project-container {
@@ -26,19 +40,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .input-form {
     border-radius: 10px;
-    height: 20px;
+    height: 40px;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    box-shadow: 5px 5px 10px #2c2b2b;
+}
+
+.submit-btn {
+  border: none;
+  background-color: rgb(145, 219, 145);
+  font-size: 24px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 2px 2px 5px #2c2b2b;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(102, 151, 102);
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.submit-btn:active {
+  background-color: rgb(102, 151, 102);
+  color: white;
+  transform: translateY(.2rem);
+  transition: 0.1s ease-in;
 }
 
 .task-window {
     display: flex;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 10px 10px 20px #2c2b2b inset;
 }
 
 .task-container {
@@ -57,10 +101,10 @@
     align-items: center;
     width: 80%;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(223, 217, 217);
     border-radius: 10px;
     position: relative;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .task-open {
@@ -71,11 +115,11 @@
     align-items: center;
     width: 80%;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(223, 217, 217);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     position: relative;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .warning {
@@ -84,9 +128,10 @@
 }
 
 .dropdown-menu {
+    display: none;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
   }
   
 .dropdown-menu-open {
@@ -97,11 +142,11 @@
     gap: 10px;
     padding: 10px;
     max-height: 200px;
-    background-color: white;
+    background-color: rgb(223, 217, 217);
     width: 80%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
   }
 
 .dropdown-btn {
@@ -114,13 +159,25 @@
     font-family: 'Comfortaa', sans-serif;
   }
 
+  .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    font-family: 'Comfortaa', sans-serif;
+  }
+
   .input-todo {
     max-height: 0;
     overflow: hidden;
   }
 
   .input-todo-show {
+    display: flex;
     max-height: 100px;
+    gap: 20px;
   }
 
   .todo_container {
@@ -130,6 +187,15 @@
   .checklist {
     display: flex;
     width: 100%;
+    gap: 20px;
+    font-size: 24px;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .new-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
   }
